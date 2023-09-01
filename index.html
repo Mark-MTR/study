@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Mark MTR">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A website which is used to share Study Documents"/>
+		<meta name="keywords" content="Study,Mark MTR,Lessons,Prepare examination"/>
+        <base target="_blank"/>
+        <title>Mark MTR's Study Documents</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+		<nav class="glass sticky">
+			<a href="mark-mtr.github.io" style="float: left;">Mark MTR</a>
+			<a href="Contact.html">联络</a>
+			<a href="Infomation-Technology.html">信息</a>
+			<a href="Bioogy&Geography.html">生地</a>
+			<a href="Physics&Chemistry.html">物化</a>
+			<a href="History&Morality-Law.html">历道</a>
+			<a href="English.html">英语</a>
+			<a href="Maths.html">数学</a>
+			<a href="Chinese.html">语文</a>
+		</nav>
+        <header>
+            <div class="glass">
+                <h1>Mark MTR的学习资料</h1>
+            </div>
+        </header>
+		<main>
+			<div class="glass">
+				<h2>最近更新：</h2>
+				<ul>
+					<li>2029.09.01 完成主页编写</li>
+				</ul>
+			</div>
+			<div class="glass">
+				<h2>一些答疑解惑：</h2>
+				<span>- 这是什么？</span>
+				<p>这是本人【准初三生（截至2023.09）】向各位分享学习的分站。</p>
+				<span>- 此项目开源吗？</span>
+				<p>当然了！您可以通过<a href="https://github.com/mark-mtr/study/">Github</a>查看和下载本页面的源代码。</p>
+				<span>- 这个网站怎么用？</span>
+				<p>您可以通过页面顶部的导航栏选择您想要学习的科目。当然，大部分科目提供的是做题技巧、错题大全。您可以结合其他资料进行学习。</p>
+			</div>
+			<div class="glass">
+				<h2>推荐文章：</h2>
+				<p>有待更新</p>
+		</main>
+        <footer>
+            <div class="glass">
+                <p>
+                    &copy;<span id="year"></span>
+                    Mark MTR. Some Rights Resevered. | Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0</a>
+                </p>
+            </div>
+        </footer>
+        <script>
+            var yearElement = document.getElementById("year");
+            var currentYear = new Date().getFullYear();
+            yearElement.textContent = currentYear;
+        </script>
+    </body>
+</html>

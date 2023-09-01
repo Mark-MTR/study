@@ -1,0 +1,109 @@
+@import "open-color.css"; /* Colors */
+@font-face {
+    font-family: 'mono';
+    src: url('fonts/mono.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'mono-italic';
+    src: url('fonts/mono-italic.ttf') format('truetype');
+}
+
+body {
+    font-size: 18px;
+    font-family: 'mono', monospace;
+    line-height: 1.75;
+    padding: 0;
+    margin: 0;
+    /* rgb(0, 212, 255); */
+    background: linear-gradient(90deg, var(--oc-cyan-0) 0%, var(--oc-cyan-1) 11%, var(--oc-cyan-2) 22%, var(--oc-cyan-3) 33%, var(--oc-cyan-4) 44%, var(--oc-cyan-5) 55%, var(--oc-cyan-6) 66%, var(--oc-cyan-7) 77%, var(--oc-cyan-8) 88%, var(--oc-cyan-9) 100%);
+}
+
+em,i {
+    font-family: 'mono-italic';
+    font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'mono', monospace;
+    font-weight: 600;
+}
+
+header,footer {
+    text-align: center;
+}
+
+header,footer,main {
+    padding: 20px;
+}
+
+.glass {
+    box-sizing: border-box;
+    background: rgba( 255, 255, 255, 0.65 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+nav.sticky {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    padding-right: 20px;
+    z-index: 1;
+    overflow: auto;
+	border-radius: 0;
+}
+
+.right {
+    text-align: right
+}
+
+.left {
+    text-align: left;
+}
+
+p {
+    text-indent: 2em;
+}
+
+a:link,a:hover,a:active,a:visited {
+    text-decoration: none;
+	transition: color 0.3s, background 0.3s;
+}
+
+a:link {
+    color: var(--oc-blue-5)
+}
+
+a:visited {
+    color: var(--oc-violet-5)
+}
+
+a:active {
+    color: var(--oc-red-5)
+}
+
+a:hover {
+	color: var(--oc-orange-5)
+}
+
+nav a:hover {
+    background: rgba( 255, 255, 255, 0.3 );
+}
+
+nav a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+div {
+	padding: 20px;
+	margin-bottom: 20px;
+}
